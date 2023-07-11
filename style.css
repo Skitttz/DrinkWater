@@ -20,15 +20,30 @@ input{
   background: transparent;
 }
 
-input[type=text]{
+input[type=number]{
   box-sizing: border-box;
   border: 3px solid #ccc;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
+  -moz-appearance: textfield;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21px;
+
 }
 
-input[type=text]:focus {
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]:focus {
+  border: 3px solid #068FFF;
+  background-color: white;
+}
+
+input[type=number]:hover {
   border: 3px solid #068FFF;
   background-color: white;
 }
@@ -74,7 +89,7 @@ body{
   margin-left: auto; 
   margin-right: auto;
   width: 600px;
-  height: 700px;
+  height: 750px;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
@@ -109,7 +124,7 @@ button{
 
 button:hover{
   color: white;
-  background-color: rgba(49, 86, 245, 0.3);
+  background-color: rgba(49, 86, 245, 0.6);
 
 }
 

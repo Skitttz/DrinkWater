@@ -19,9 +19,9 @@
     <div class="conteudo">
       <h1 class="titulo">Quer saber quanto você deve beber de água por dia?</h1>
       <h3>Idade:</h3>
-      <input type="text" style="color:black" id=" idade" name="idade" required minlength="4" maxlength="8" size="15" placeholder="">
+      <input type="number" style="color:black" id=" idade" name="idade" required minlength="1" maxlength="4" size="15">
       <h3>Peso <span style="color:rgba(63, 46, 62, 0.3)">(em Kg)</span>:</h3>
-      <input type="text" style="color:black" id=" peso" name="peso" required minlength="4" maxlength="8" size="15" placeholder="" required>
+      <input type="number" style="color:black" id=" peso" name="peso" required minlength="4" maxlength="8" size="15" placeholder="" required>
       <br>
       <button onclick="calcularAgua()">Calcular</button>
       <div id="id-result" class="resultadoContainer">
