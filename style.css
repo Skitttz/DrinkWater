@@ -1,0 +1,145 @@
+body,
+p,
+h1,
+ul,
+li,
+blockquote {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Anonymous Pro', monospace;;
+}
+
+div{
+  margin: 0px;
+  padding: 0px;
+}
+
+input{
+  border-radius: 3px;
+  padding: 4px;
+  background: transparent;
+}
+
+input[type=text]{
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #068FFF;
+  background-color: white;
+}
+
+
+::placeholder{
+color: white;
+}
+
+h1,h3,span,input,p{
+  color: aliceblue;
+}
+
+
+
+
+body{
+  background-image: url(./img/background-water.jpg);
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+
+}
+.imagem {
+  display: inline-block;
+  width: 45%;
+
+
+}
+
+.titulo{
+  justify-items: end;
+
+}
+.container{
+  display: grid;
+  margin-top: 60px;
+  grid-template-rows: 300px 1fr 1fr;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 60px;
+  margin-left: auto; 
+  margin-right: auto;
+  width: 600px;
+  height: 700px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+
+
+}
+
+
+.resultadoContainer{
+  border-radius: 3px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: solid #BEBEC7 transparent;
+  background-color: rgba(0, 0, 0, 0.125);
+  
+}
+
+.resultadoContainer p{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+button{
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 8px 16px 8px 16px;
+
+}
+
+button:hover{
+  color: white;
+  background-color: rgba(49, 86, 245, 0.3);
+
+}
+
+.conteudo{
+  text-align: center;
+  width: 400px;
+  height: 300px;
+  
+}
+
+.gray{
+  margin-left: 10px;
+  color: #BEBEC7;
+}
+
+.colorResult {
+  color: #F9D949;
+  -webkit-transition: 0.5s;
+
+  font-size: 1.75rem;
+
+}
+
+.containerResult{
+  padding: 0px;
+}
+
+#id-result {
+  display: none;
+  transition: opacity 1s ease-out;
+  opacity: 0;
+
+}

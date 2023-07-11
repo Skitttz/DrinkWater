@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.svg">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <title>DrinkWater</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <img class="imagem" src="img/body-water.svg" alt="Agua imagem">
+
+    <div class="conteudo">
+      <h1 class="titulo">Quer saber quanto você deve beber de água por dia?</h1>
+      <h3>Idade:</h3>
+      <input type="text" style="color:black" id=" idade" name="idade" required minlength="4" maxlength="8" size="15" placeholder="">
+      <h3>Peso <span style="color:rgba(63, 46, 62, 0.3)">(em Kg)</span>:</h3>
+      <input type="text" style="color:black" id=" peso" name="peso" required minlength="4" maxlength="8" size="15" placeholder="" required>
+      <br>
+      <button onclick="calcularAgua()">Calcular</button>
+      <div id="id-result" class="resultadoContainer">
+
+
+        <p>Para manter-se bem hidratado, lembre-se de beber cerca de
+          <span class="spanR colorResult">0L</span> de água 🧐 <span class="emoji"></span>
+
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
+
+<script src=" script.js"></script>
